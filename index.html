@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Shiftr</title>
+  <link type="text/css" rel="stylesheet" media="screen" href="shiftr.css" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+</script>
+</head>
+
+
+
+<body>
+<!-- header -->
+<div id="header">
+  <div id="nav">
+    <ul>
+      <li><a href="#header">Hem</a></li>
+      <li><a href="#om">Om Shiftr</a></li>
+      <li><a href="#medlem">Bli Medlem</a></li>
+      <li><a href="#pages">Mina Sidor</a></li>
+    </ul>
+  </div>
+  <div id="logo">
+      <div id="circle"><div id="circle2"></div></div>
+      <p> Shiftr</p>
+  </div>
+  <div id="downarrow"><a href="#first">&#9661</a></div>
+</div>
+
+<!-- First -->
+
+<div id="first">
+  <div id="fcontent">
+    <div id="fcol1">
+      <div class="phone">
+        <div class="screen">
+          <p id="phonecontent">
+            <img id="location" src="bilder/location.svg" />
+            <img id="sthlm" src="bilder/sthlm.svg" />
+          </p>
+        </div>
+        <div class="phonebutton"></div>
+      </div>
+    </div>
+    <div id="fcol2">
+      <h1>Träna</br> <strong>var</strong> du vill</h1>
+      <h3><strong>50</strong> Locations i Stockholm</h3>
+      <h3><strong>45</strong> Locations i Göteborg</h3>
+      <h3><strong>20</strong> Locations i Malmö</h3>
+      <h3><strong>18</strong> Locations i Uppsala</h3>
+    </div>
+    <div id="downarrow2"><a href="#second">&#9661</a></div>
+  </div>
+</div>
+
+<!-- Second -->
+
+<div id="second">
+  <div id="scontent">
+    <div id="scol1">
+      <h1>Träna</br> <strong>hur</strong> du vill</h1>
+      <h3><a href="#">Styrketräning</a></h3>
+      <h3><a href="#">Crossfit</a></h3>
+      <h3><a href="#">Klättring</a></h3>
+      <h3><a href="#">Kampsport</a></h3>
+    </div>
+    <div id="scol2">
+      <div class="phone" id="phone2">
+        <div class="screen">
+          <p id="phonecontent">
+            <img id="hantel" src="bilder/hantel.svg" />
+            <img id="berg" src="bilder/berg.svg" />
+          </p>
+        </div>
+        <div class="phonebutton"></div>
+      </div>
+    </div>
+    <div id="downarrow3"><a href="#header">&#9661</a></div>
+  </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,308 @@
+/* Header */
+
+body {
+  background-color: ;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+}
+
+a {
+  text-decoration: none;
+  color: #428774;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 900;
+  color: #428774;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #737373;
+  letter-spacing: 1px;
+}
+
+
+p {
+  font-family: 'Roboto';
+  font-size: 18px;
+}
+
+strong {
+  color: #c99065;
+}
+
+#header {
+  background-color: skyblue;
+    background-image:url(bilder/hero.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+}
+
+#nav {
+  position: absolute;
+  right: 20px;
+}
+
+#nav li {
+  display: inline-flex;
+}
+
+#nav li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #428774;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 14px 10px;
+}
+
+#nav li a:hover {
+  color: #c99065;
+  transition: 0.4s;
+}
+
+#logo {
+  width: 300px;
+  text-align: center;
+  justify-content: center;
+  margin-top: 30vh;
+  margin-right: 2%;
+}
+
+#circle {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 30px solid #428774;
+  position: relative;
+  margin: auto;
+}
+
+#circle2 {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 20px solid #428774;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+}
+
+#logo p {
+  color: #428774;
+  font-size: 72px;
+  font-weight: 900;
+  font-family: 'Open Sans';
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+#downarrow {
+  font-size: 120px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 20px;
+  right: 50%;
+  color: #428774;
+}
+
+#downarrow:hover {
+  transform: rotateY(180deg);
+  transition: all 0.7s ease-in-out 0.1s;
+}
+#downarrow:hover a {
+  color: #c99065;
+  transition: 0.5s;
+}
+
+/* First Block */
+
+#first {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#fcontent {
+  height: auto;
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#fcol1 {
+  height: 600px;
+  width: 50%;
+}
+
+#fcol2 {
+  height: 600px;
+  width: 50%;
+}
+
+#downarrow2 {
+  width: auto;
+  font-size: 120px;
+  font-weight: bold;
+  color: #428774;
+  height: 150px;
+}
+
+#downarrow2:hover {
+  transform: rotateY(180deg);
+  transition: all .7s ease-in-out 0.1s;
+}
+#downarrow2:hover a {
+  color: #c99065;
+  transition: 0.5s;
+}
+
+/* iPhone */
+
+.phone {
+  display: flex;
+  float:right;
+  margin-right: 75px;
+  position: relative;
+  height: 500px;
+  width: 275px;
+  background-color: #e5e5e5;
+  border-radius: 2em;
+  border: 3px solid #ccdfd9;
+  text-align: center;
+  justify-content: space-around;
+  -webkit-box-shadow: -15px 15px 0px 3px rgba(204,223,217,1);
+  -moz-box-shadow: -15px 15px 0px 3px rgba(204,223,217,1);
+  box-shadow: -15px 15px 0px 3px rgba(204,223,217,1)
+}
+
+.screen {
+  position: absolute;
+  top: 40px;
+  height: 82%;
+  width: 90%;
+  left: 5%;
+  background-color: #fdfaf7;
+  border-radius: 2%;
+}
+
+.phonebutton {
+  position: absolute;
+  bottom: 2%;
+  height: 25px;
+  width: 25px;
+  background-color: none;
+  border: 2px solid #aaa;
+  border-radius: 0.5em;
+}
+
+#phonecontent {
+  font-family: 'Roboto';
+}
+
+#location {
+  width: 70%;
+  height: auto;
+}
+
+#sthlm {
+  width: 100%;
+  padding-top: 45%;
+}
+
+/* Second Block */
+
+#second {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5f7f1;
+}
+
+#scontent {
+  height: auto;
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#scol1 {
+  width: 45%;
+  padding-right: 5%;
+  height: 600px;
+  text-align: right;
+}
+
+#scol2 {
+  width: 45%;
+  height: 600px;
+  padding-left: 5%;
+}
+
+h3 a {
+  color: #737373;
+}
+
+h3 a:hover {
+  color: #c99065;
+  transition: 0.2s;
+}
+
+h3 a:active {
+font-weight: bold;
+}
+
+#downarrow3 {
+  width: auto;
+  font-size: 120px;
+  font-weight: bold;
+  color: #428774;
+  height: 150px;
+}
+
+#downarrow3:hover {
+  transform: rotateY(180deg);
+  transition: all .7s ease-in-out 0.1s;
+}
+#downarrow3:hover a {
+  color: #c99065;
+  transition: 0.5s;
+}
+
+#phone2 {
+  margin: 0px;
+  float: left;
+  -webkit-box-shadow: 15px 15px 0px 3px rgba(204,223,217,1);
+  -moz-box-shadow: 15px 15px 0px 3px rgba(204,223,217,1);
+  box-shadow: 15px 15px 0px 3px rgba(204,223,217,1)
+}
+
+#phonecontent {
+  font-family: 'Roboto';
+}
+
+#berg {
+  width: 50%;
+  height: auto;
+  margin-top: 50px;
+}
+
+#hantel {
+  width: 50%;
+  height: auto;
+  margin-top: 20px;
+}
